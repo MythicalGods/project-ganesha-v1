@@ -12,7 +12,7 @@ def index():
 
 @app.get("/about")
 def about():
-    return "About me"
+    return render_template("about.html") 
 
 if __name__ == "__main__":
     debug = getenv("DEBUG") == "True" # Get debug mode from env variables
